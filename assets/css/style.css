@@ -1,0 +1,466 @@
+
+:root {
+    --color-primary: #283645;
+    --color-white: #ffffff;
+    --color-black-pantone: #2d2d2f;
+    --color-green: #3FA500;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-primary);
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #25d366;
+    font-size: 54px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+
+.padding-global {
+    padding: 0px 350px;
+}
+
+.margin-global {
+    margin: 0px 350px;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.e-mail_contato,
+.tel_contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.informacoes_de_contato {
+    height: 50px;
+    background: #e7e7e7;
+    display: flex;
+    align-items: center;
+}
+
+.sessao-informacoes-contato {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+.img > img {
+    width: 100px;
+}
+
+#header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.banner_home {
+    width: 100%;
+    height: 541px;
+    background-image: url('../img/banner-home.jpg');
+    background-size: cover;
+    display: flex; /* Alterado para flex */
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.text_banner_home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text_banner_home > h1 {
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.text_banner_home > p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-white);
+}
+
+
+.section_marcas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 70px;
+}
+
+.section_marcas > h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.carousel-marcas {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Gradiente de desaparecimento nas bordas */
+.carousel-marcas::before,
+.carousel-marcas::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.carousel-marcas::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.carousel-marcas::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+/* Animação para criar o loop contínuo */
+.carousel-track {
+    display: flex;
+    gap: 60px;
+    animation: scroll 60s linear infinite; /* Tempo aumentado para suavidade */
+}
+
+.carousel-marcas img {
+    width: auto;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+/* Animação de scroll suave */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Move metade do conteúdo para criar o loop */
+    }
+}
+
+
+.card_Assistencia {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.article-card-assistencia > h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.btn-orcar {
+    font-size: 1.8rem;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.btn-orcar:hover {
+    padding: 10px 30px;
+    background-color: var(--color-primary);
+}
+
+.tipos-de-servico {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+.texto-servicos {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+.texto-servicos > h4 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card-servico1 {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--color-primary);
+}
+.card-servico1 > i {
+    font-size: 40px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #283645;
+    height: 300px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.texto-contato {
+    text-align: center;
+}
+
+.texto-contato > p {
+    color: var(--color-white);
+    font-size: 1.6rem;
+}
+
+.footer {
+    background-color: var(--color-primary);
+    height: 200px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-container > p {
+    color: #e7e7e7;
+}
+
+
+@media (max-width: 1100px) {
+
+    .wrapper {
+        padding: 0px 50px;
+    }
+    .card_Assistencia {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .texto-contato > p {
+        font-size: 1.2rem;
+    }
+
+    .img-assistencia > img {
+        width: 400px;
+    }
+
+    .card_Assistencia {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article-card-assistencia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section_marcas {
+        text-align: center;
+    }
+
+    .e-mail_contato > p {
+        font-size: 0.8rem;
+    }
+.tel_contato > p {
+    font-size: 0.8rem;
+}
+}
+
+@media (max-width: 555px) {
+
+    .wrapper {
+        padding: 0px 25px;
+    }
+    .img-assistencia > img {
+        width: 300px;
+    }
+
+    .e-mail_contato > i {
+        font-size: 1rem;
+    }
+
+    .e-mail_contato > p {
+        font-size: 0.6rem;
+    }
+    .tel_contato {
+        display: none;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container > img {
+        width: 150px;
+    }
+
+    .btn-orcar {
+        font-size: 1.2rem;
+    }
+
+    .contato {
+        height: 450px;
+    }
+
+    .sessao-informacoes-contato > span {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 130px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+
+.efeito-scroll,
+.efeito-scroll2,
+.efeito-scroll3,
+.efeito-scroll4 {
+    visibility: hidden;
+}
