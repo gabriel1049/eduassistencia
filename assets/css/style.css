@@ -191,7 +191,7 @@ body {
 .carousel-track {
     display: flex;
     gap: 60px;
-    animation: scroll 60s linear infinite; /* Tempo aumentado para suavidade */
+    animation: scroll 20s linear infinite; /* Tempo aumentado para suavidade */
 }
 
 .carousel-marcas img {
