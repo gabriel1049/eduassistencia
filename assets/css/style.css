@@ -313,6 +313,17 @@ body {
 
 .footer-container > p {
     color: #e7e7e7;
+    font-size: 1.5rem;
+}
+
+.footer-container > p > a {
+    text-decoration: none;
+    color: #25d366;
+}
+
+.icon-new {
+    width: 96px;
+    height: 96px;
 }
 
 
@@ -399,7 +410,7 @@ body {
     }
 
     .contato {
-        height: 450px;
+        height: auto;
     }
 
     .sessao-informacoes-contato > span {

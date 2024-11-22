@@ -8,6 +8,16 @@
 
     <link rel="icon" href="./assets/img/logo-site.png" type="image/x-icon">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNCBZM99V0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KNCBZM99V0');
+    </script>
+
 
     <!-- LINK FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +40,8 @@
 
 
     <!-- Link para o WhatsApp com o ícone -->
-    <a href="https://wa.me/5511962044250" target="_blank" class="whatsapp-button" aria-label="Oi, gostaria de um orçamento">
+    <a href="https://wa.me/551133371827" target="_blank" class="whatsapp-button"
+        aria-label="Oi, gostaria de um orçamento">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -40,7 +51,7 @@
             <div class="e-mail_contato">
                 <i class="fa-solid fa-envelope"></i>
                 <p>
-                    eduassistenciatecnica2020@gmail.com
+                    contato@eduassist.com.br
                 </p>
             </div>
 
@@ -76,8 +87,9 @@
     <section class="banner_home">
         <section class="text_banner_home wrapper">
             <h1>Edu Assistência Técnica</h1>
-            <p>Há vinte anos atuando no mercado, temos como principal objetivo atender à necessidade de nossos clientes
-                de forma plena e eficaz, com foco no atendimento de qualidade e excelência na prestação de serviços.</p>
+            <p>Nossa empresa é referência em assistência técnica de equipamentos de som, TV, vídeo e projetores,
+                oferecendo serviços especializados para as marcas mais renomadas do mercado: JBL, LG, Marantz, Denon,
+                Marshall, Onkyo, Yamaha, Pioneer, Samsung, Technics, Philips, Sony, Bose e Behringer.</p>
         </section>
     </section>
 
@@ -136,7 +148,8 @@
 
             <article class="article-card-assistencia">
                 <h3>
-                    Assistência Técnica Especializada e Serviços de Manutenção em Domicílio
+                    Com mais de 20 anos de experiência e técnicos altamente capacitados, estamos aptos para reparar e
+                    manter seus equipamentos
                 </h3>
 
                 <button class="btn-orcar" id="btn">
@@ -152,43 +165,35 @@
 
         <section class="tipos-de-servico efeito-scroll3" id="empresa">
             <div class="card-servico1">
-                <i class="fa-solid fa-music"></i>
+                <img src="./assets/img/icons/mesa-de-som.jpeg" class="icon-new">
                 <h3>
                     MESAS DE SOM
                 </h3>
             </div>
 
             <div class="card-servico1">
-                <i class="fa-brands fa-soundcloud"></i>
+                <img src="./assets/img/icons/amplificador.jpeg" class="icon-new">
                 <h3>
                     AMPLIFICADORES
                 </h3>
             </div>
 
             <div class="card-servico1">
-                <i class="fa-solid fa-tv"></i>
+                <img src="./assets/img/icons/caixa-acustica.jpeg" class="icon-new">
                 <h3>
-                    AMPLIFICADORES
+                    CAIXA ACUSTICA
                 </h3>
             </div>
 
             <div class="card-servico1">
-                <i class="fa-solid fa-photo-film"></i>
+                <img src="./assets/img/icons/multimidia-de-carro.jpeg" class="icon-new">
                 <h3>
                     MULTIMÍDIA AUTOMOTIVA
                 </h3>
             </div>
 
             <div class="card-servico1">
-                <i class="fa-solid fa-headphones"></i>
-                <h3>
-                    FONES DE OUVIDO
-                </h3>
-
-            </div>
-
-            <div class="card-servico1">
-                <i class="fa-solid fa-drum-steelpan"></i>
+                <img src="./assets/img/icons/receivers.jpeg" class="icon-new">
                 <h3>
                     RECEIVERS
                 </h3>
@@ -196,9 +201,17 @@
             </div>
 
             <div class="card-servico1">
-                <i class="fa-solid fa-file-audio"></i>
+                <img src="./assets/img/icons/controladoras.jpeg" class="icon-new">
                 <h3>
                     CONTROLADORAS
+                </h3>
+
+            </div>
+
+            <div class="card-servico1">
+                <img src="./assets/img/icons/tv.jpeg" class="icon-new">
+                <h3>
+                    TV
                 </h3>
 
             </div>
@@ -209,8 +222,9 @@
         <section class="contato efeito-scroll4" id="contato">
             <section class="texto-contato">
                 <p>
-                    Estamos comprometidos em oferecer o melhor serviço para os nossos clientes, entre em contato agora
-                    com de nossos especialistas e faça já o seu orçamento!
+                    Analisamos de forma minuciosa e profissional, identificando e resolvendo desde pequenos ajustes até
+                    reparos complexos. Os serviços são realizados com peças originais e com total respeito aos padrões
+                    de qualidade de cada fabricante, garantindo segurança e durabilidade.
                 </p>
 
                 <button class="btn-orcar" id="btn">
@@ -225,7 +239,9 @@
         <section class="footer-container wrapper">
             <img src="./assets/img/logo-site.png" alt="Logo site do footer" srcset="">
 
-            <p>EDU Assistência Técnica - R. Santa Ifigênia, 295 - Sala 209</p>
+            <p>EDU Assistência Técnica - <a
+                    href="https://www.google.com/maps/search/?api=1&query=R.%20Santa%20Ifig%C3%AAnia,%20295%20%E2%80%93%20Sala%20209%20%E2%80%93%20S%C3%A3o%20Paulo">R.
+                    Santa Ifigênia, 295 - Sala 209</a></p>
 
 
         </section>
@@ -268,8 +284,8 @@
 
 <script>
     document.getElementById('btn').addEventListener('click', function () {
-    window.open('https://wa.me/5511962044250', '_blank');
-});
+        window.open('https://wa.me/551133371827', '_blank');
+    });
 
 </script>
 
